@@ -6,8 +6,10 @@ elif number < 0:
 else:
     signe = "zéro"
 
-if (number % 2) == 0:
-    parité = "pair"
+if (number % 2) == 0 and number != 0:
+    parité = "et pair"
+elif number == 0:
+    parité = "(et il est pair)"
 else:
-    parité = "impair"
-print(f"Le nombre est {signe} et {parité}")
+    parité = "et impair"
+print(f"Le nombre est {signe} {parité}")

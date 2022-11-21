@@ -1,6 +1,11 @@
-x = int(input("Entrez une valeur pour x: "))
-y = int(input("Entrez une valeur pour y: "))
+x = int(input("Entrez x: "))
+y = int(input("Entrez y: "))
+print("\nAvant permutation:")
+print(f"x : {x}")
+print(f"y : {y}")
 x = x * y
-y = x / y
-x = x / y
-print(f"x a la pour valeur {x} et y a pour valeur {y}")
+y = int(x / y)
+x = int(x / y)
+print("\nAprès permutation:")
+print(f"x : {x}")
+print(f"y : {y}")

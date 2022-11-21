@@ -1,3 +1,3 @@
-age = int(input("Entrez votre âge: "))
+age = int(input("Donnez votre âge:\n"))
 annee = 2022 - age
-print(f"Vous êtes né en {annee}")
+print(f"Votre année de naissance est : {annee}")
