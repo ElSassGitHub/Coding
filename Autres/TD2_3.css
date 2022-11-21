@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    border-width: 2px;
+    border-style: dashed;
+}
+
+header{
+    text-align: center;
+    font-family: sans-serif;
+    color: red;
+    background-color: lightgray;
+}
+
+nav{
+    background-color: gray;
+    border-width: 2px;
+    border-style: solid;
+}
+
+div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article{
+    background-color: pink;
+    width: 33.33%;
+}
+
+#left{
+    float: left;
+    background-color: yellow;
+}
+
+footer{
+    background-color: lightgray;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+}

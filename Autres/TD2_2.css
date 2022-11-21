@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    justify-items: baseline;
+}
+
+#article1{
+    width: 50%;
+    height: 30%;
+    background-color: red;
+}
+
+#article2{
+    width: 10%;
+    height: 20%;
+    background-color: blue;
+}
+
+#article3{
+    width: 1.5em;
+    height: 300px;
+    background-color: green;
+}
+
+#article4{
+    width: 5%;
+    height: 3%;
+    background-color: purple;
+    order: 1;
+}
+
+#article5{
+    width: 5%;
+    height: 3%;
+    background-color: pink;
+}
+
+#article6{
+    width: 5%;
+    height: 3%;
+    background-color: brown;
+}

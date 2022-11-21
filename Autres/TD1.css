@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+p{
+    width: 600px;
+    height: 200px;
+    font-family: 'Dosis',Monaco,monospace;
+    font-weight: 600;
+    font-size: 1.25em;
+    color: #6923B2;
+    text-align: center;
+    line-height: 1.5em;
+    border-width: 7px;
+    border-radius: 15px;
+    border-color: red;
+    border-style: double;
+    padding: 10px 30px 10px 50px;
+    margin: 20px 100px 10px 40px;
+    background-color: rgba(0,150,150,0.5);
+}
+
+.test{
+    background-color: red;
+}
+
+#toto{
+    background-color: darkblue;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    font-size: 1.5em;
+}
+
+a:focus{
+    color: #6923B2;
+}
