@@ -19,6 +19,7 @@ a{
     right: 0;
     text-align: center;
     z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .Navigation div{
@@ -31,21 +32,21 @@ a{
 .Navigation div p{
     font-size: 0.7em;
     text-align: right;
-    color: rgb(40, 196, 196);
+    color: white;
     font-weight: 600;
 }
 
 .Navigation div a{
-    color: rgb(40, 196, 196);
+    color: white;
     font-weight: 600;
 }
 
 /*Style pour la section accueil*/
 
 .Accueil{
-    background-color: red;
-    height: 500px;
-    z-index: 1000;
+    height: 550px;
+    background-image: url(../Communs/fond_accueil.jpeg);
+    background-position: 70% -520px;
 }
 
 .Accueil .flexaccueil{
@@ -54,6 +55,13 @@ a{
     align-items: center;
     margin-left: 15%;
     font-size: 1.75em;
+}
+
+.nom_liens{
+    color: white;
+    height: 32%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.87) 0%, rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0.1) 100%);
+    padding: 5px;
 }
 
 .Accueil .langue{
@@ -65,19 +73,42 @@ a{
     margin-right: 10px;
 }
 
+.page{
+    background-color: rgb(138, 137, 137);
+    padding: 2px 6px 2px 6px;
+    text-decoration: none;
+    border-left: outset #CCCCCC;
+    border-top: outset #CCCCCC;
+    border-right: outset #333;
+    border-bottom: outset #333;
+    color: white;
+}
+
+select{
+    display: block;
+    position: relative;
+    top: 10px;
+    font-size: 0.5em;
+    background-color: white;
+    padding: 2px 6px 2px 6px;
+    border-left: inset #333;
+    border-top: inset #333;
+    border-right: inset #CCCCCC;
+    border-bottom: inset #CCCCCC;
+}
+
 /*Style pour la setcion Contact / Liens externes*/
 
 .Contact{
-    background-color: darkgoldenrod;
-    padding: 20px;
-    height: 70px;
+    background: linear-gradient(90deg, rgba(11,11,11,1) 0%, rgba(29,29,29,1) 50%, rgba(11,11,11,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .Contact a{
-    margin: 30px;
+    margin: 20px 30px -10px 30px;
 }
 
 .Contact a img{
@@ -89,7 +120,8 @@ a{
 
 footer{
     height: 70px;
-    background-color: rgb(100, 50, 38);
+    color: white;
+    background: linear-gradient(90deg, rgba(11,11,11,1) 0%, rgba(29,29,29,1) 50%, rgba(11,11,11,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;

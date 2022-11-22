@@ -23,6 +23,7 @@ a{
     right: 0;
     text-align: center;
     z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .Navigation div{
@@ -35,21 +36,28 @@ a{
 .Navigation div p{
     font-size: 0.7em;
     text-align: right;
-    color: rgb(40, 196, 196);
+    color: white;
     font-weight: 600;
 }
 
 .Navigation div a{
-    color: rgb(40, 196, 196);
+    color: white;
     font-weight: 600;
 }
 
 /*Style pour la section accueil*/
 
 .Accueil{
-    background-color: red;
-    height: 500px;
-    z-index: 1000;
+    height: 550px;
+    background-image: url(../Communs/fond_accueil.jpeg);
+    background-position: 70% -520px;
+}
+
+.nom_liens{
+    color: white;
+    height: 32%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.87) 0%, rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0.1) 100%);
+    padding: 5px;
 }
 
 .Accueil .flexaccueil{
@@ -69,19 +77,42 @@ a{
     margin-right: 10px;
 }
 
+.page{
+    background-color: rgb(138, 137, 137);
+    padding: 2px 6px 2px 6px;
+    text-decoration: none;
+    border-left: outset #CCCCCC;
+    border-top: outset #CCCCCC;
+    border-right: outset #333;
+    border-bottom: outset #333;
+    color: white;
+}
+
+select{
+    display: block;
+    position: relative;
+    top: 10px;
+    font-size: 0.5em;
+    background-color: white;
+    padding: 2px 6px 2px 6px;
+    border-left: inset #333;
+    border-top: inset #333;
+    border-right: inset #CCCCCC;
+    border-bottom: inset #CCCCCC;
+}
+
 /*Style pour la section Contact / Liens externes*/
 
 .Contact{
-    background-color: darkgoldenrod;
-    padding: 20px;
-    height: 70px;
+    background: linear-gradient(90deg, rgba(11,11,11,1) 0%, rgba(29,29,29,1) 50%, rgba(11,11,11,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .Contact a{
-    margin: 30px;
+    margin: 20px 30px -10px 30px;
 }
 
 .Contact a img{
@@ -93,7 +124,8 @@ a{
 
 footer{
     height: 70px;
-    background-color: rgb(100, 50, 38);
+    color: white;
+    background: linear-gradient(90deg, rgba(11,11,11,1) 0%, rgba(29,29,29,1) 50%, rgba(11,11,11,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,18 +138,13 @@ footer p {
 /*Style pour la page Hobbies*/
 
 
-#page_hobbies > section{
+section{
     width: 75%;
     margin: auto;
+    background: linear-gradient(90deg, rgba(11,11,11,1) 0%, rgba(29,29,29,1) 50%, rgba(11,11,11,1) 100%);
 }
 
-.Cardistry{
-    background-color: green;
-    padding: 20px;
-}
-
-.Crochetage{
-    background-color: blue;
+.Cardistry, .Crochetage{
     padding: 20px;
 }
 
@@ -125,11 +152,11 @@ footer p {
     margin: 20px;
 }
 
-#page_hobbies h1{
+.Cardistry h1, .Crochetage h1{
     text-align: center;
 }
 
-#page_hobbies .texte {
+.Cardistry .texte, .Crochetage .texte {
     margin: 10px;
     margin-left: 0;
 }
@@ -147,6 +174,14 @@ footer p {
     margin-right: 5%;
 }
 
+.partie1, .partie2{
+    color: white;
+}
+
+.partie1 p, .partie2 p{
+    text-align: start;
+}
+
 .partie2{
     display: flex;
     justify-content: space-between;
@@ -157,23 +192,30 @@ footer p {
     width: 40%;
 }
 
-.conteneur_cv{
-    width: 100%;
-    background-color: brown;
-    text-align: center;
-}
-
-.cv{
-    height: auto;
-    max-width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /*Style des animations de la page hobbies*/
 
-.ouvert{
+button{
+    background: none;
+    border: none;
+}
+
+button:focus > .fermé{
     display: none;
+}
+
+button:focus > .ouvert{
+    display: block;
+}
+
+.ouvert{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+}
+
+.ouvert img{
+    border: 2px solid white;
 }
 
 .fermé{
@@ -184,23 +226,33 @@ footer p {
 }
 
 .fermé img{
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 }
 
 .fermé h1{
     background-color: white;
-    width: 80%;
+    width: 100%;
     height: 50px;
     line-height: 2.5em;
 }
 
+#fermé1 img, #fermé2 img{
+    border-style: solid solid none solid;
+    border-color: black;
+}
+
+#fermé1 h1, #fermé2 h1{
+    border-style: none solid solid solid;
+    border-color: black;
+}
+
 #fermé1 img, #fermé1 h1{
-    box-shadow: 5px 5px 5px blue;
+    box-shadow: 7px 7px 3px white;
 }
 
 #fermé2 img, #fermé2 h1{
-    box-shadow: 5px 5px 5px red;
+    box-shadow: 7px 7px 3px white;
 }
 
 #fermé1{
