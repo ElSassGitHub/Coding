@@ -22,8 +22,8 @@ while True:
     else:
         break
 
-for i in range(start, end+1):
-    if i > 7 and i <= 17:
+for i in range(start, end):
+    if i >= 7 and i < 17:
         heures_high += 1
         tarif_high += 2
     else:
