@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*Style pour la barre de navigation*/
+
+a{
+    text-decoration: none;
+}
+
+.Navigation{
+    position: fixed;
+    height: 65px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.Navigation div{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+
+.Navigation div p{
+    font-size: 0.7em;
+    text-align: right;
+    color: rgb(40, 196, 196);
+    font-weight: 600;
+}
+
+.Navigation div a{
+    color: rgb(40, 196, 196);
+    font-weight: 600;
+}
+
+/*Style pour la section accueil*/
+
+.Accueil{
+    background-color: red;
+    height: 500px;
+    z-index: 1000;
+}
+
+.Accueil .flexaccueil{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    font-size: 1.75em;
+}
+
+.Accueil .langue{
+    font-size: 0.75em;
+}
+
+.flexaccueil a{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*Style pour la section Contact / Liens externes*/
+
+.Contact{
+    background-color: darkgoldenrod;
+    padding: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact a{
+    margin: 30px;
+}
+
+.Contact a img{
+    width: 60px;
+    height: 60px;
+}
+
+/*Style pour la section Copyright / Footer*/
+
+footer{
+    height: 70px;
+    background-color: rgb(100, 50, 38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/*Style pour la page Hobbies*/
+
+
+#page_hobbies > section{
+    width: 75%;
+    margin: auto;
+}
+
+.Cardistry{
+    background-color: green;
+    padding: 20px;
+}
+
+.Crochetage{
+    background-color: blue;
+    padding: 20px;
+}
+
+.Cardistry > div, .Crochetage > div{
+    margin: 20px;
+}
+
+#page_hobbies h1{
+    text-align: center;
+}
+
+#page_hobbies .texte {
+    margin: 10px;
+    margin-left: 0;
+}
+
+.card1, .cro1{
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10%;
+}
+
+.card2, .cro2{
+    height: auto;
+    max-width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.partie2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.partie2 > div{
+    width: 40%;
+}
+
+.conteneur_cv{
+    width: 100%;
+    background-color: brown;
+    text-align: center;
+}
+
+.cv{
+    height: auto;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Style des animations de la page hobbies*/
+
+.ouvert{
+    display: none;
+}
+
+.fermé{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fermé img{
+    max-width: 80%;
+    height: auto;
+}
+
+.fermé h1{
+    background-color: white;
+    width: 80%;
+    height: 50px;
+    line-height: 2.5em;
+}
+
+#fermé1 img, #fermé1 h1{
+    box-shadow: 5px 5px 5px blue;
+}
+
+#fermé2 img, #fermé2 h1{
+    box-shadow: 5px 5px 5px red;
+}
+
+#fermé1{
+    
+}
+
+
+
+#fermé2{
+    
+}

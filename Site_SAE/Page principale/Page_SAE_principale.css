@@ -5,8 +5,6 @@
     font-family: sans-serif;
 }
 
-/*Style pour la page principale*/
-
 /*Style pour la barre de navigation*/
 
 a{
@@ -47,12 +45,7 @@ a{
 .Accueil{
     background-color: red;
     height: 500px;
-}
-
-.Accueil .langue{
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    z-index: 1000;
 }
 
 .Accueil .flexaccueil{
@@ -61,6 +54,10 @@ a{
     align-items: center;
     margin-left: 15%;
     font-size: 1.75em;
+}
+
+.Accueil .langue{
+    font-size: 0.75em;
 }
 
 .flexaccueil a{
@@ -240,64 +237,4 @@ footer{
 
 footer p {
     font-size: 1.2em;
-}
-
-/*Style pour la page Hobbies*/
-
-#page_hobbies, #page_cv{
-    display: none;
-}
-
-#page_hobbies > section{
-    width: 75%;
-    margin: auto;
-}
-
-.Cardistry{
-    background-color: red;
-    padding: 20px;
-}
-
-.Crochetage{
-    background-color: blue;
-    padding: 20px;
-}
-
-.Cardistry > div, .Crochetage > div{
-    margin: 20px;
-}
-
-#page_hobbies h1{
-    text-align: center;
-}
-
-#page_hobbies .texte {
-    margin: 10px;
-    margin-left: 0;
-}
-
-.placeholder1, .placeholder2, .placeholder3{
-    width: 100%;
-    background-color: white;
-    margin: auto;
-}
-
-.partie2{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.partie2 > div{
-    width: 40%;
-}
-
-/*Style pour la transition entre les pages*/
-
-#page_principale:not(:target){
-    display: none;
-}
-
-#page_hobbies:target, #page_cv:target{
-    display: block;
 }
