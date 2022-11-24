@@ -154,6 +154,7 @@ section{
 
 .Cardistry h1, .Crochetage h1{
     text-align: center;
+    line-height: 1.4em;
 }
 
 .Cardistry .texte, .Crochetage .texte {
@@ -178,8 +179,11 @@ section{
     color: white;
 }
 
-.partie1 p, .partie2 p{
+.partie1 .texte, .partie2 .texte{
     text-align: start;
+    text-align: justify;
+    line-height: 1.4em;
+    font-size: 1.05em;
 }
 
 .partie2{
