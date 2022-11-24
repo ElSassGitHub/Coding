@@ -57,6 +57,7 @@ a{
 }
 
 .Accueil .flexaccueil{
+    height: 600px;
     display: flex;
     align-items: center;
     margin-left: 15%;
@@ -77,6 +78,20 @@ a{
     border-right: outset #333;
     border-bottom: outset #333;
     color: white;
+}
+
+.page_langue{
+    position: relative;
+    top: 5px;
+    font-size: 0.75em;
+    background-color: white;
+    padding: 2px 6px 2px 6px;
+    border-left: inset #333;
+    border-top: inset #333;
+    border-right: inset #CCCCCC;
+    border-bottom: inset #CCCCCC;
+    text-decoration: none;
+    color: black;
 }
 
 /*Style pour la section Présentation de moi*/
