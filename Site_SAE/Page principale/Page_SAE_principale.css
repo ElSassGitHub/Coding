@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+h1{
+    font-style: italic;
 }
 
 /*Style pour la barre de navigation*/
@@ -64,6 +74,10 @@ a{
     font-size: 1.75em;
 }
 
+.Accueil h1{
+    font-style: normal;
+}
+
 
 .flexaccueil a{
     margin-top: 10px;
@@ -111,9 +125,8 @@ a{
 }
 
 .Présentation div p, .Compétences div p{
-    text-align: justify;
-    line-height: 1.4em;
-    font-size: 1.05em;
+    line-height: 1.5em;
+    font-size: 1.1em;
 }
 
 .texte p{
@@ -160,14 +173,14 @@ img{
     border-style: solid;
     margin: 20px 30px 20px 30px;
     padding: 10px;
-    line-height: 1.4em;
-    font-size: 1.05em;
+    line-height: 1.5em;
+    font-size: 1.1em;
 }
 
 .Compétences h1{
     margin-bottom: 5px;
     text-align: center;
-    line-height: 1.4em;
+    line-height: 1.5em;
 }
 
 /*Style pour la partie Expèriences*/
@@ -190,9 +203,8 @@ img{
     background-color: white;
     position: relative;
     padding:  10px 20px 20px 20px;
-    text-align: justify;
-    line-height: 1.4em;
-    font-size: 1.05em;
+    line-height: 1.5em;
+    font-size: 1.1em;
 }
 
 .Expèrience .date{
