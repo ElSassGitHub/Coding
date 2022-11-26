@@ -7,6 +7,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+p{
+    line-height: 1.5em;
+}
+
 h1{
     font-style: italic;
 }
@@ -26,6 +30,7 @@ a{
     text-align: center;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1.1em;
 }
 
 .Navigation div{
@@ -73,6 +78,7 @@ a{
 .Accueil h1{
     font-style: normal;
 }
+
 
 .flexaccueil a{
     margin-top: 10px;
