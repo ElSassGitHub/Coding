@@ -185,6 +185,7 @@ footer p {
 
 .card2, .cro2{
     height: auto;
+    max-height: 600px;
     max-width: 40%;
     margin-left: 5%;
     margin-right: 5%;
