@@ -5,7 +5,7 @@ print("\n")
 
 for i in range(0, nombreEtudiants):
     x = float(input(f"Note étudiant {i} : "))
-    while not (x > 20 and x < 0):
+    while (x > 20 and x < 0):
         x = float(input(f"Entrez une note valide pour l'étudiant {i} : "))
     notes.append(x)
     moyenne += x
